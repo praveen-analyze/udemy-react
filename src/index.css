@@ -1,0 +1,257 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+     font-family: "Gabarito", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+}
+.navbar_s1{
+    padding: 10px;
+
+}
+.navbar_s1 h1{
+    color:#9C3DD9 ;
+}
+.navbar_s2{
+    border: 1px solid gray;
+    width: 60%;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.navbar_s2 input{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    
+}
+.navbar_s2 i{
+    
+    color: gray;
+}
+.navbar_s2 input:focus{
+    outline: none;
+
+}
+.navbar_s3{
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    align-items: center;
+}
+.navbar_s4{
+    display: none;
+}
+.my-learning{
+    position: relative;
+    cursor: pointer;
+}
+.my-learning__popup{
+    border: transparent;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    top: 45px;
+    display: none;
+    padding:20px ;
+    z-index: 1;
+    border-radius: 5%;
+    border: 1px solid gray;
+  
+
+}
+
+.my-learning:hover .my-learning__popup{
+    display: block;
+    
+}
+.catagories{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.catagories p{
+    background-color: #9C3DD9;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #9C3DD9;
+}
+.catagories p:hover{
+    background-color:transparent;
+    transition: 1s;
+    border: 1px solid #9C3DD9;
+
+}
+.salee-img{
+    position: relative;
+}
+.salee-img img{
+    width: 100%;
+       
+}
+.sale-image__popup{
+    width: 35%;
+    position: absolute;
+    border: transparent;
+    background-color: white;
+    padding: 2%;
+    top: 10%;
+    left: 10%;
+    border-radius: 2%;
+    opacity: 0;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    flex-basis: 20%;
+    
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+    
+}
+
+.recommented{
+    padding: 10px;
+}
+
+.rec__container{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+.rec__card{
+    width: 300px;
+    margin: 10px;
+    flex-basis: 20%;
+}
+.rec__card img{
+    width: 100%;
+    height: 50%;
+}
+.topics{
+    padding: 10px;
+}
+.topics__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.topics__container p{
+   
+    padding: 10px;
+    border: 2px solid gray;
+    flex-grow: 1;
+    flex-basis: 25%;
+
+}
+.popular{
+    padding: 10px;
+}
+.footer{
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+.footer__one p{
+    margin: 20px;
+}
+.footer__one{
+    display: flex;
+    gap: 20px;
+}
+.footer__two{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .catagories{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .rec__card{
+        flex-basis: 40%;
+    
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .navbar_s4{
+        display: block;
+        margin-right: 20px;
+        font-size: large;
+    
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .navbar_s2,.navbar_s3{
+        display: none;
+    
+    }
+    
+}
+@media screen and (min-width:600px) {
+    .navbar_s2 i{
+        font-size: 16px;
+    }
+    
+    }
+    
+@media (max-width: 600px) {
+
+    .sale-image__popup {
+        width: 35%;
+        
+        top: 15%;
+        
+        padding: 5px;
+    }
+
+    .sale-image__popup h1 {
+        font-size: 10px;
+    }
+
+    .sale-image__popup p {
+        font-size: 8px;
+    }
+}
